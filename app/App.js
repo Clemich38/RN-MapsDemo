@@ -29,7 +29,6 @@ let navOptions = {
 const MapsDemo = StackNavigator({
   Home: { screen: HomePage, navigationOptions: navOptions },
   BasicMap: { screen: BasicMapPage, navigationOptions: navOptions },
-  // Second: { screen: SecondPage, navigationOptions: navOptions },
 });
 
 AppRegistry.registerComponent('MapsDemo', () => MapsDemo);
