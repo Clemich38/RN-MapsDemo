@@ -31,14 +31,14 @@ export default class BasicMapPage extends React.Component {
       },
       markers: [{
         title: "Marker 1",
-        description: "Some random place", 
+        description: "A place in Tokyo", 
         latlng: {
           latitude: 35.6895000,
           longitude: 139.7528600
         }
       }, {
         title: "Marker 2",
-        description: "Some other random place",
+        description: "Another place in Tokyo",
         latlng: {
           latitude: 35.6999500,
           longitude: 139.7598300
