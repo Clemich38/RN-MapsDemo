@@ -21,6 +21,7 @@ export default class BasicMapPage extends React.Component {
     title: 'Basic Map Page',
   };
 
+  // Initialize the states (map center sand markers coordinates)
   getInitialState() {
     return {
       region: {
@@ -47,6 +48,7 @@ export default class BasicMapPage extends React.Component {
     };
   }
 
+  // Modifie state value 
   onRegionChange(region) {
     this.setState({ region });
   }
@@ -56,11 +58,13 @@ export default class BasicMapPage extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Basic Map Page</Text>
+        {/* Map View */}
         <MapView
           style={styles.map}
           region={this.state.region}
           onRegionChange={this.onRegionChange.bind(this)}>
 
+          {/* Markers */}
           {this.state.markers.map(marker => (
             <MapView.Marker
               key={marker.title}
